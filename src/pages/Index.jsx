@@ -19,10 +19,10 @@ const Index = () => {
     <Box bg="linear-gradient(135deg, brand.800 0%, brand.600 100%)">
       <Flex align="center" justify={{ base: "center", md: "space-around", xl: "space-between" }} direction={{ base: "column-reverse", md: "row" }} wrap="nowrap" px={8} py={16}>
         <Stack spacing={4} w={{ base: "80%", md: "40%" }} align={["center", "center", "flex-start", "flex-start"]}>
-          <Heading as="h1" size="2xl" fontWeight="extrabold" color="white" textAlign={["center", "center", "left", "left"]}>
+          <Heading as="h1" size="2xl" fontWeight="extrabold" color="black" textAlign={["center", "center", "left", "left"]}>
             Machine Learning products made simple
           </Heading>
-          <Heading as="h2" size="xl" color="white" opacity="0.8" fontWeight="normal" lineHeight={1.5} textAlign={["center", "center", "left", "left"]}>
+          <Heading as="h2" size="xl" color="black" opacity="0.8" fontWeight="normal" lineHeight={1.5} textAlign={["center", "center", "left", "left"]}>
             Redefine Machine Learning Data Management with Aligned: A Tool for Advanced Feature Management, Data Lineage Visualization, and Real-Time Model Monitoring.
           </Heading>
           <Flex justify={["center", "center", "flex-start", "flex-start"]}>
@@ -44,6 +44,50 @@ const Index = () => {
           <Feature icon={<Icon as={FaCheckCircle} w={12} h={12} color="brand.500" />} title={"Data Quality Assurance"} text={"Ensure that your data is of the highest quality, and that it's ready to be used in your models."} />
           <Feature icon={<Icon as={FaTags} w={12} h={12} color="brand.500" />} title={"Data-set Annotation"} text={"Generate data-sets for your models, and ensure that they are of the highest quality."} />
         </SimpleGrid>
+      </Box>
+
+      <Box p={20} bg="white">
+        <Heading as="h2" size="xl" mb={4} textAlign="center">
+          Why Aligned?
+        </Heading>
+        <Text fontSize="xl" textAlign="center" mb={8}>
+          Aligned simplifies machine learning data management, enabling you to focus on building great models.
+        </Text>
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+          <Box>
+            <Heading as="h3" size="lg" mb={4}>
+              Streamlined Workflow
+            </Heading>
+            <Text fontSize="lg">Aligned integrates seamlessly into your existing workflow, making it easy to manage your data at every stage of the machine learning process.</Text>
+          </Box>
+          <Box>
+            <Heading as="h3" size="lg" mb={4}>
+              Powerful Insights
+            </Heading>
+            <Text fontSize="lg">Gain valuable insights into your data and models with Aligned's advanced analytics and visualization tools.</Text>
+          </Box>
+          <Box>
+            <Heading as="h3" size="lg" mb={4}>
+              Enterprise-Grade Security
+            </Heading>
+            <Text fontSize="lg">Keep your data safe and secure with Aligned's robust security features, designed for enterprise-level protection.</Text>
+          </Box>
+        </SimpleGrid>
+      </Box>
+
+      <Box p={20} bg="gray.100">
+        <Heading as="h2" size="xl" mb={4} textAlign="center">
+          Join the Waiting List
+        </Heading>
+        <Text fontSize="xl" textAlign="center" mb={8}>
+          Be among the first to experience the power of Aligned. Sign up for our waiting list today!
+        </Text>
+        <Flex justify="center">
+          <Input type="email" placeholder="Your email" rounded="full" border="1px solid" borderColor="gray.300" mr={2} />
+          <Button colorScheme="purple" size="lg" rounded="full" flexShrink={0}>
+            Join Waiting List
+          </Button>
+        </Flex>
       </Box>
     </Box>
   );
