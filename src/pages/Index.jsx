@@ -16,18 +16,18 @@ const Feature = ({ title, text, icon }) => {
 
 const Index = () => {
   return (
-    <Box>
+    <Box bg="linear-gradient(135deg, brand.800 0%, brand.600 100%)">
       <Flex align="center" justify={{ base: "center", md: "space-around", xl: "space-between" }} direction={{ base: "column-reverse", md: "row" }} wrap="nowrap" px={8} py={16}>
         <Stack spacing={4} w={{ base: "80%", md: "40%" }} align={["center", "center", "flex-start", "flex-start"]}>
-          <Heading as="h1" size="xl" fontWeight="bold" color="primary.800" textAlign={["center", "center", "left", "left"]}>
+          <Heading as="h1" size="2xl" fontWeight="extrabold" color="white" textAlign={["center", "center", "left", "left"]}>
             Machine Learning products made simple
           </Heading>
-          <Heading as="h2" size="md" color="primary.800" opacity="0.8" fontWeight="normal" lineHeight={1.5} textAlign={["center", "center", "left", "left"]}>
+          <Heading as="h2" size="xl" color="white" opacity="0.8" fontWeight="normal" lineHeight={1.5} textAlign={["center", "center", "left", "left"]}>
             Redefine Machine Learning Data Management with Aligned: A Tool for Advanced Feature Management, Data Lineage Visualization, and Real-Time Model Monitoring.
           </Heading>
           <Flex justify={["center", "center", "flex-start", "flex-start"]}>
             <Input type="email" placeholder="Your email" rounded="full" border="1px solid" borderColor="gray.300" mr={2} />
-            <Button colorScheme="blue" rounded="full" flexShrink={0}>
+            <Button colorScheme="purple" size="lg" rounded="full" flexShrink={0}>
               Get Early Access
             </Button>
           </Flex>
@@ -37,12 +37,12 @@ const Index = () => {
         </Box>
       </Flex>
 
-      <Box p={4}>
+      <Box p={20}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
-          <Feature icon={<Icon as={FaDatabase} w={10} h={10} />} title={"Data Lineage"} text={"Collect data lineage through transformations, views, models, data sources, and visualize it in a way that's easy to understand."} />
-          <Feature icon={<Icon as={FaChartLine} w={10} h={10} />} title={"Real-Time Model Evaluation"} text={"View how your models are performing in real-time, and get alerts when they're not performing as expected."} />
-          <Feature icon={<Icon as={FaCheckCircle} w={10} h={10} />} title={"Data Quality Assurance"} text={"Ensure that your data is of the highest quality, and that it's ready to be used in your models."} />
-          <Feature icon={<Icon as={FaTags} w={10} h={10} />} title={"Data-set Annotation"} text={"Generate data-sets for your models, and ensure that they are of the highest quality."} />
+          <Feature icon={<Icon as={FaDatabase} w={12} h={12} color="brand.500" />} title={"Data Lineage"} text={"Collect data lineage through transformations, views, models, data sources, and visualize it in a way that's easy to understand."} />
+          <Feature icon={<Icon as={FaChartLine} w={12} h={12} color="brand.500" />} title={"Real-Time Model Evaluation"} text={"View how your models are performing in real-time, and get alerts when they're not performing as expected."} />
+          <Feature icon={<Icon as={FaCheckCircle} w={12} h={12} color="brand.500" />} title={"Data Quality Assurance"} text={"Ensure that your data is of the highest quality, and that it's ready to be used in your models."} />
+          <Feature icon={<Icon as={FaTags} w={12} h={12} color="brand.500" />} title={"Data-set Annotation"} text={"Generate data-sets for your models, and ensure that they are of the highest quality."} />
         </SimpleGrid>
       </Box>
     </Box>
