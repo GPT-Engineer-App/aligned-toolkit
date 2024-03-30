@@ -4,6 +4,32 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { FaDatabase, FaChartLine, FaCheckCircle, FaTags } from "react-icons/fa";
 
+const BeforeAfterSection = () => {
+  return (
+    <Box my={20}>
+      <Heading as="h3" size="lg" mb={6} textAlign="center">
+        Data Management: Before & After Aligned
+      </Heading>
+      <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={10}>
+        <Box textAlign="center">
+          <Heading as="h4" size="md" mb={4}>
+            Before Aligned
+          </Heading>
+          <Text mb={3}>📉 Spreadsheet chaos, endless searching for files, and data wrangling nightmares.</Text>
+          <Image src="https://example.com/before-image.jpg" alt="Chaos before Aligned" rounded="md" />
+        </Box>
+        <Box textAlign="center">
+          <Heading as="h4" size="md" mb={4}>
+            After Aligned
+          </Heading>
+          <Text mb={3}>🚀 One-click automation, seamless data flows, and happy data scientists dancing.</Text>
+          <Image src="https://example.com/after-image.jpg" alt="Peace after Aligned" rounded="md" />
+        </Box>
+      </SimpleGrid>
+    </Box>
+  );
+};
+
 const Feature = ({ title, text, icon }) => {
   return (
     <Stack>
@@ -48,6 +74,10 @@ const Index = () => {
         </SimpleGrid>
       </Box>
 
+      <BeforeAfterSection />
+
+      <BeforeAfterSection />
+
       <Box p={20} bg="white">
         <Heading as="h2" size="xl" mb={4} textAlign="center">
           Why Aligned?
@@ -77,20 +107,7 @@ const Index = () => {
         </SimpleGrid>
       </Box>
 
-      <Box p={20} bg="gray.100">
-        <Heading as="h2" size="xl" mb={4} textAlign="center">
-          Join the Waiting List
-        </Heading>
-        <Text fontSize="xl" textAlign="center" mb={8}>
-          Be among the first to experience the power of Aligned. Sign up for our waiting list today!
-        </Text>
-        <Flex justify="center">
-          <Input type="email" placeholder="Your email" rounded="full" border="1px solid" borderColor="gray.300" mr={2} />
-          <Button colorScheme="purple" size="lg" rounded="full" flexShrink={0}>
-            Join Waiting List
-          </Button>
-        </Flex>
-      </Box>
+      <BeforeAfterSection />
     </Box>
   );
 };
