@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Heading, Text, Stack, Button, Flex, Image, Icon, SimpleGrid, Input, useColorModeValue } from "@chakra-ui/react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import { FaDatabase, FaChartLine, FaCheckCircle, FaTags } from "react-icons/fa";
 
 const Feature = ({ title, text, icon }) => {
